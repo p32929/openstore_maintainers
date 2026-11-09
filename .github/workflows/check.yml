@@ -1,0 +1,32 @@
+# Checks every pull request (and push) that changes maintainers.yaml:
+# each line must be a GitHub repo, no account twice, and every newly added repo must exist,
+# be public, pass all of OpenStore's checks, and be added by its own owner.
+name: Check maintainers.yaml
+
+on:
+  pull_request:
+    paths: [maintainers.yaml]
+  push:
+    paths: [maintainers.yaml]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Get the latest checker
+        run: curl -fsSL https://raw.githubusercontent.com/p32929/openstore_template/main/validate.mjs -o "$RUNNER_TEMP/validate.mjs"
+      - name: Check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          git show "$BASE:maintainers.yaml" > "$RUNNER_TEMP/before.yaml" 2>/dev/null || : > "$RUNNER_TEMP/before.yaml"
+          node "$RUNNER_TEMP/validate.mjs" --list maintainers.yaml --since "$RUNNER_TEMP/before.yaml" ${AUTHOR:+--author "$AUTHOR"}
