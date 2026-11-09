@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 22
       - name: Get the latest checker
-        run: curl -fsSL https://raw.githubusercontent.com/p32929/openstore_template/main/validate.mjs -o "$RUNNER_TEMP/validate.mjs"
+        run: curl -fsSL https://raw.githubusercontent.com/p32929/p32929_openstore/template/validate.mjs -o "$RUNNER_TEMP/validate.mjs"
       - name: Check
         env:
           GITHUB_TOKEN: ${{ github.token }}
