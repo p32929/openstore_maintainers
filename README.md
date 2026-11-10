@@ -1,10 +1,10 @@
 # OpenStore maintainers
 
-The list of developers on OpenStore: [`maintainers.yaml`](maintainers.yaml), one public GitHub repo per developer.
+The list of developers on **[OpenStore](https://openstore.pfay.workers.dev)**: [`maintainers.yaml`](maintainers.yaml), one public GitHub repo per developer.
 
 ## Join
 
-1. Create your listing repo from the **[template](https://github.com/p32929/p32929_openstore/tree/template)** (download it as a ZIP or clone the `template` branch), add your apps, and check them with `node validate.mjs`.
+1. Create your listing repo from the **[template](https://github.com/p32929/p32929_openstore/tree/template)** (download it as a ZIP or clone the `template` branch), add your apps, and check them with `node validate.mjs` (or enter your repo at [openstore.pfay.workers.dev/validate](https://openstore.pfay.workers.dev/validate)).
 2. Open a pull request here adding your repo at the end of [`maintainers.yaml`](maintainers.yaml):
 
    ```yaml
