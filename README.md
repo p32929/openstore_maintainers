@@ -14,3 +14,5 @@ The list of developers on **[OpenStore](https://openstore.pfay.workers.dev)**: [
 Your pull request is checked automatically: the line must be a GitHub repo, your account can't already be listed, your repo must be public and pass every OpenStore check, and the pull request must come from the repo's owner. Fix anything it reports in your own repo and the check re-runs when you push to the pull request.
 
 That's the only time you come here. Everything else happens in your own repo.
+
+Questions, bugs or ideas? Ask in [OpenStore feedback](https://github.com/p32929/openstore_feedback): issues for bugs and suggestions, Discussions for everything else.
