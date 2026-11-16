@@ -41,3 +41,11 @@ If something fails, the check says what. Fix it in your own repo and push; the c
 ## Questions?
 
 Ask in [OpenStore feedback](https://github.com/p32929/openstore_feedback): Issues for bugs and ideas, Discussions for everything else.
+
+## Share
+
+<a href="https://p32929.github.io/share/?repo=openstore_maintainers"><img src="https://p32929.github.io/readme/share.svg" alt="Share this with your friends in just a click" width="420"></a>
+
+## Support
+
+<a href="https://p32929.github.io/support/"><img src="https://p32929.github.io/readme/support.svg" alt="If you like my works and want to support me, feel free to support" width="420"></a>
