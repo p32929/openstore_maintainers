@@ -42,6 +42,10 @@ If something fails, the check says what. Fix it in your own repo and push; the c
 
 Ask in [OpenStore feedback](https://github.com/p32929/openstore_feedback): Issues for bugs and ideas, Discussions for everything else.
 
+## Contributing
+
+To join the store, the pull request described above is all you need, no issue required. For anything else, like a change to the checks or to this page, please open an issue first and tell me what you have in mind. That way we can agree on it before you spend time on a pull request. Thank you!
+
 ## Share
 
 <a href="https://p32929.github.io/share/?repo=openstore_maintainers"><img src="https://p32929.github.io/readme/share.svg" alt="Share this with your friends in just a click" width="420"></a>
